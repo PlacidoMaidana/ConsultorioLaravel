@@ -20,3 +20,6 @@ Route::get('/', function () {
 Route::get('/saludo', function () {
     return view('Tabla_del_dos');
 });
+
+Route::get('/obra_social', "App\Http\Controllers\ObraSocialController@index");
+Route::get('/pacientes', "App\Http\Controllers\PacienteController@index");
